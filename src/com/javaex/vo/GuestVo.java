@@ -8,15 +8,15 @@ public class GuestVo {
 	private String regDate;
 	
 	public GuestVo() { }
-	public GuestVo(String name, String password, String content, String regDate) {
+	public GuestVo(String name, String password, String content) {
 		this.name = name;
 		this.password = password;
 		this.content = content;
-		this.regDate = regDate;
 	}
 	public GuestVo(int no, String name, String password, String content, String regDate) {
-		this(name, password, content, regDate);
+		this(name, password, content);
 		this.no = no;
+		this.regDate = regDate;
 	}
 	
 	public int getNo() {
